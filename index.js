@@ -1,3 +1,4 @@
-import { DATABASE_URL } from "./config/config.js";
 
-console.log(DATABASE_URL);
+import fetchRssFeeds from "./DataBase/querises.js";
+
+fetchRssFeeds();
