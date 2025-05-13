@@ -1,7 +1,7 @@
-import {Poll} from 'pg';
+import {Pool} from 'pg';
 import {PGDATABASE,PGHOST,PGPASSWORD,PGUSER,PGPORT,PGSSLMODE} from '../config/config.js'
 
-const pool = new Poll({
+const pool = new Pool({
      host:PGHOST,
     user: PGUSER,
     password: PGPASSWORD,
