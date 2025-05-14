@@ -1,7 +1,3 @@
-// import fetchRssFeeds from "./DataBase/querises.js";
-// import parsFeedsAndFetchData from "./Rss/fetchfeeds.js";
-// import formatMessage from "./utils/formatMessage.js";
+import sendMessage from "./telegram/sendToChannel.js";
 
-// formatMessage();
-// // fetchRssFeeds();
-// parsFeedsAndFetchData();
+sendMessage();

@@ -5,7 +5,7 @@ function formatter(article) {
     ${article.title}
     ${article.pubDate}
     ${article.link}`
-    .trim()
+    .trim().join('\n')
 };
 
 export default formatter;

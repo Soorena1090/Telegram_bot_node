@@ -1,5 +1,5 @@
 import Parser from "rss-parser";
-import fetchRssFeeds from "../DataBase/querises.js";
+import {fetchRssFeeds} from "../DataBase/querises.js";
 import formatter from "../utils/formatMessage.js";
 
 const parser = new Parser();
