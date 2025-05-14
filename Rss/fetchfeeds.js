@@ -1,5 +1,6 @@
 import Parser from "rss-parser";
 import fetchRssFeeds from "../DataBase/querises.js";
+import formatter from "../utils/formatMessage.js";
 
 const parser = new Parser();
 async function parsFeedsAndFetchData() {
@@ -9,10 +10,10 @@ async function parsFeedsAndFetchData() {
 
     for (const feed of feeds ) {
         const url = feed.rss_url;
-    }
-    try {
+        try {
         const parsed = await parser.parseURL(url);
-        parsed.item.map(item => {
+        console.log(parsed)
+        parsed.items.map(item => {
             Items.push({
                 title: item.title,
                 link: item.link,
@@ -24,7 +25,9 @@ async function parsFeedsAndFetchData() {
     }catch (error) {
         console.error(error);
     };
-    return Items;
+    };
+    const formatted = Items.map(item => formatter(item));
+    return formatted;
 };
 
 export default parsFeedsAndFetchData;

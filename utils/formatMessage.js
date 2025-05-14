@@ -1,5 +1,11 @@
-import parsFeedsAndFetchData from "../Rss/fetchfeeds.js";
 
-async function formatMessage() {
-    const Data = 0;
-}
+function formatter(article) {
+    return `
+    *${article.sourse}*
+    ${article.title}
+    ${article.pubDate}
+    ${article.link}`
+    .trim()
+};
+
+export default formatter;
