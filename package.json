@@ -22,6 +22,7 @@
     "dotenv": "^16.5.0",
     "node-telegram-bot-api": "^0.66.0",
     "pg": "^8.15.6",
-    "rss-parser": "^3.13.0"
+    "rss-parser": "^3.13.0",
+    "telenode-js": "^1.6.0"
   }
 }

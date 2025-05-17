@@ -1,11 +1,9 @@
 
 function formatter(article) {
-    return `
-    *${article.sourse}*
-    ${article.title}
-    ${article.pubDate}
-    ${article.link}`
-    .trim().join('\n')
-};
+    return [
+    `${article.source}`,
+    `[${article.title}](${article.link})`,
+   `${article.pubDate}`
+].join('\n')};
 
 export default formatter;

@@ -1,3 +1,3 @@
-import sendMessage from "./telegram/sendToChannel.js";
+import run from "./telegram/sendToChannel.js";
 
-sendMessage();
+run();
