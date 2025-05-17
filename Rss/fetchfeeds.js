@@ -12,7 +12,6 @@ async function parsFeedsAndFetchData() {
         const url = feed.rss_url;
         try {
         const parsed = await parser.parseURL(url);
-        console.log(parsed)
         parsed.items.map(item => {
             Items.push({
                 title: item.title,

@@ -4,6 +4,6 @@ function formatter(article) {
     `${article.source}`,
     `[${article.title}](${article.link})`,
    `${article.pubDate}`
-].join('\n')};
+]};
 
 export default formatter;
